@@ -14,8 +14,7 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
-  width: 100%;
-  background: red;
+   
 `;
 
 const NavLink=css`
@@ -36,18 +35,27 @@ const Logo = styled(Link)`
     }
 `;
 
-const MenuBar= styled(GiCrystalBars)`
+const MenuBar= styled.i`
   display: none;
   @media screen and(max-width: 768px)
 {
     display: block;
+    background-image: url(${Bars});
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%,25%);
 }
 `;
 
 const NavMenu= styled.div`
 display: flex;
 align-items: center;
-margin-right: -48px;
+margin-right: 800px;
 @media screen and  (max-width: 768px){
     display: none;
 }
@@ -69,7 +77,7 @@ const NavBtn=styled.div`
 const Navbar = () => {
     return (
         <Nav>
-            <Logo to='/'>My Villa</Logo>
+            <Logo to='/'>BTS villa</Logo>
             <MenuBar />
                 <NavMenu>
                     {menuData.map((item, index) =>(
