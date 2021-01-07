@@ -1,11 +1,13 @@
 import React from 'react'
 import styled,{css}from 'styled-components/macro';
-
 import {Link} from 'react-router-dom';
 import {menuData} from '../data/MenuData';
 import { Button } from './Buttons';
 import Bars from '../images/bars.svg';
 import {GiCrystalBars} from 'react-icons/gi';
+import { IoSend } from 'react-icons/io5';
+import { NavLink } from 'react-router-dom';
+
 
 const Nav = styled.nav`
   height: 60px;
@@ -17,7 +19,7 @@ const Nav = styled.nav`
    
 `;
 
-const NavLink=css`
+const NavLinks=css`
 color:#fff;
 display: flex;
 align-items: center;
@@ -28,7 +30,7 @@ text-decoration: none;
 `;
 
 const Logo = styled(Link)`
-     ${NavLink}
+     ${NavLinks}
      font-style: italic;
      &:hover{
         transform: translateY(-2px);
@@ -55,14 +57,14 @@ const MenuBar= styled.i`
 const NavMenu= styled.div`
 display: flex;
 align-items: center;
-margin-right: 800px;
+margin-right: 30px;
 @media screen and  (max-width: 768px){
     display: none;
 }
 `;
 
 const NavMenuLinks= styled(Link)`
-${NavLink}
+${NavLinks}
 `;
 
 const NavBtn=styled.div`
@@ -74,10 +76,12 @@ const NavBtn=styled.div`
     margin-right: 24px;
 `;
 
+
+
 const Navbar = () => {
     return (
         <Nav>
-            <Logo to='/'>BTS villa</Logo>
+            <Logo to='/'>My Villa</Logo>
             <MenuBar />
                 <NavMenu>
                     {menuData.map((item, index) =>(
@@ -85,7 +89,8 @@ const Navbar = () => {
                     ))}
                  </NavMenu>
                  <NavBtn>
-                     <Button to='/contact' primary='true'>Contact us</Button>
+                     <Button to='/Contact' primary='true' >Contact us</Button>
+                     
                 </NavBtn>
         </Nav>
     )

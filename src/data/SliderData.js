@@ -5,7 +5,7 @@ import ImageFour from '../images/image4.jpg';
 
 export const SliderData= [
     {
-        title: 'LUX vill in hosur,Bangalore',
+        title: 'LUX villa in Hosur,Bangalore',
         price: '$24,000',
         path: '/homes',
         label: 'View Home',
@@ -13,7 +13,7 @@ export const SliderData= [
         alt: 'House'
     },
     {
-        title: 'LUX vill in hosur,Bangalore',
+        title: 'LUX villa in Hosokotta,Bangalore',
         price: '$20,000',
         path: '/homes',
         label: 'View Home',
@@ -21,7 +21,7 @@ export const SliderData= [
         alt: 'House'
     },
     {
-        title: 'LUX vill in hosur,Bangalore',
+        title: 'LUX vill in Sarjapuram,Bangalore',
         price: '$15,000',
         path: '/homes',
         label: 'View Home',
@@ -29,7 +29,7 @@ export const SliderData= [
         alt: 'House'
     },
     {
-        title: 'LUX vill in hosur,Bangalore',
+        title: 'LUX vill in Bannerkat,Bangalore',
         price: '$10,000',
         path: '/homes',
         label: 'View Home',
