@@ -66,6 +66,9 @@ export const About = () => {
                 <h1>{Aboutinfo.heading}</h1>
                 <p>{Aboutinfo.paragraphOne}</p>
                 <p>{Aboutinfo.paragraphTwo}</p>
+                <p>{Aboutinfo.paragraphThree}</p>
+                <p>{Aboutinfo.moto}</p>
+                <p>{Aboutinfo.greet}</p>
                 </ColoumLeft>
                 <ColoumRight reverse={Aboutinfo.reverse}>
                 <img src={Aboutinfo.image} alt='home'/>

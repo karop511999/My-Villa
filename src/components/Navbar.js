@@ -6,7 +6,7 @@ import { Button } from './Buttons';
 import Bars from '../images/bars.svg';
 import {GiCrystalBars} from 'react-icons/gi';
 import { IoSend } from 'react-icons/io5';
-import { NavLink } from 'react-router-dom';
+
 
 
 const Nav = styled.nav`
@@ -19,7 +19,7 @@ const Nav = styled.nav`
    
 `;
 
-const NavLinks=css`
+const Navink=css`
 color:#fff;
 display: flex;
 align-items: center;
@@ -30,7 +30,7 @@ text-decoration: none;
 `;
 
 const Logo = styled(Link)`
-     ${NavLinks}
+     ${Navink}
      font-style: italic;
      &:hover{
         transform: translateY(-2px);
@@ -64,7 +64,7 @@ margin-right: 30px;
 `;
 
 const NavMenuLinks= styled(Link)`
-${NavLinks}
+${Navink}
 `;
 
 const NavBtn=styled.div`
@@ -81,7 +81,7 @@ const NavBtn=styled.div`
 const Navbar = () => {
     return (
         <Nav>
-            <Logo to='/'>My Villa</Logo>
+            <Logo to='/'>My VILLA</Logo>
             <MenuBar />
                 <NavMenu>
                     {menuData.map((item, index) =>(
@@ -89,7 +89,7 @@ const Navbar = () => {
                     ))}
                  </NavMenu>
                  <NavBtn>
-                     <Button to='/Contact' primary='true' >Contact us</Button>
+                     <Button to={'/Contact'} primary="true" >Contact us</Button>
                      
                 </NavBtn>
         </Nav>

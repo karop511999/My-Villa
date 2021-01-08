@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import GlobalStyle from './globalStyles';
@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Home from './pages/Home';
 import Rental from './pages/Rental';
-import Aboutinfo from './data/Aboutinfo';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
      <Route  exact path='/Rental' component={Rental} />
      </Switch>
      </Router>
+     <Footer />
     </>
   );
 }
